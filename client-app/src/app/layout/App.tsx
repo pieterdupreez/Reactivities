@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
 import NavBar from './NavBar.tsx';
 import HomePage from '../../features/home/HomePage.tsx';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
 
     return (
         <>
+            <ToastContainer position='bottom-right' theme='colored'></ToastContainer>
             {location.pathname === '/' ? <HomePage /> : (
                 <>
                     <NavBar />
