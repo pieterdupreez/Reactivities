@@ -12,7 +12,7 @@ activity : Activity
 
 function ActivityListItem({ activity }: Props) {
     const { activityStore } = useStore();
-    const { deleteActivity, loading } = activityStore;
+    const { deleteActivity } = activityStore;
 
 
     const [target, setTarget] = useState('');
